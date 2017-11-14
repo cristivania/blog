@@ -13,3 +13,318 @@
  *= require_tree .
  *= require_self
  */
+ @import "normalize";
+
+ body h1, h3, p, ul, li{
+   font-family: 'Raleway', sans-serif;
+
+ }
+ h1{
+   font-size: 2.5rem;
+   letter-spacing: 2px;
+ }
+
+
+ @media only screen and (max-width: 500px) {
+     body {
+         ;
+     }
+ }
+
+ .header{
+   display: table;
+   text-align: center;
+   position: relative;
+   width: 100%;
+   height: 100px;
+   background: url("") no-repeat center center scroll;
+   background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   position: relative;
+   background-attachment: fixed;
+ }
+
+ #top .nav{
+   padding: 2.5 5%;
+   padding-top: 3rem;
+   padding-right: 10rem;
+ }
+
+
+
+ .text-center{
+   margin-top: 250px;
+ }
+
+ {
+   text-align: center;
+   letter-spacing: 4px;
+   color: #3E2723 ;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ #about-section{
+   padding-top: 100px;
+   padding-right: 100px;
+   padding-bottom: 100px;
+   padding-left: 100px;
+ }
+
+ .aboutme{
+   text-align: center;
+   font-size: 40px;
+ }
+
+ .divider {
+   display: block;
+   margin: 30px;
+   height: 2px;
+   background-color: #90A4AE;
+ }
+
+ img {
+   width: 30%;
+   height: auto;
+   margin-top: 50px;
+   float: left;
+   max-width: 450px;
+   padding-right: 20px;
+ }
+
+ .about-text{
+   display: inline-block;
+   width: 60%;
+   vertical-align: top;
+   font-size: .5em;
+   margin-top: 100px;
+ }
+
+ .box-content {
+   display: inline-block;
+   width: 200px;
+   padding: 10px;
+ }
+
+ #skills{
+   background-color: #ECEFF1;
+   text-align: center;
+   background-attachment: fixed;
+   padding-top: 25px;
+   padding-right: 100px;
+   padding-bottom: 25px;
+   padding-left: 100px;
+ }
+
+
+
+ .wrapper{
+   width: ;
+   margin: 0 auto;
+ }
+
+ .col-1, .col-2{
+   float: left;
+
+ }
+
+ .col-1{
+   width: 60%;
+   text-align: center;
+   padding-right: 2.5%;
+
+ }
+
+ ul{
+   padding-top: 30px;
+ }
+
+ .dev {
+   display: inline-block;
+   border: 2px solid rgba(57,57,57,.5);
+   text-align: center;
+   margin: 10px 10px 10px 0;
+   padding: 0;
+   width: 100px;
+   height: 100px;
+   line-height: 7;
+   font-size: 14px;
+ }
+
+ #work{
+   text-align: center;
+   padding-top: 25px;
+   padding-right: 100px;
+   padding-bottom: 25px;
+   padding-left: 100px;
+ }
+
+ #contact{
+   text-align: center;
+   padding-top: 25px;
+   padding-right: 100px;
+   padding-bottom: 25px;
+   padding-left: 100px;
+ }
+
+ .gh{
+   display: inline-block;
+   padding-top: 10px;
+ }
+
+ .mooch{
+   display: inline-block;
+ }
+
+ .mc{
+   display: inline-block;
+   padding-top: 10px;
+ }
+
+ .work-pic .workdivider{
+   border-right: :1px solid #F4D03F;
+   height:80px;
+   position:absolute;
+   right:249px;
+ }
+
+ #main_footer{
+   padding: 2em 5%;
+   border-top: 1px;
+   background:#6cf;
+
+
+ }
+
+ .copyright{
+   float: left;
+   font-size: .9em;
+   margin: 0;
+
+ }
+
+ #blog_title, #article{
+   font-weight: 400;
+   text-align: center;
+   padding: 2em 0 0;
+   font-size: 30px;
+   text-transform: capitalize;
+
+ }
+  .post_wrapper{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+ .date{
+   font-size: .9em;
+   margin: 0;
+
+ }
+
+ .post h2{
+   margin: 0;
+   font-size: 2em;
+   text-transform: uppercase;
+ }
+
+ input{
+   width: 50%;
+   max-width: 100%;
+   margin: .5em 0 2em 0;
+
+ }
+
+ textarea{
+   width: 50%;
+   max-width: 100%;
+
+ }
+
+ input[type="submit"]{
+   background: ;
+   text-align: center;
+   font-size: 1em;
+   text-decoration: none;
+   padding: 1em 2em !important;
+
+ }
+
+ #share_box{
+   text-align: center;
+
+ }
+
+ .button{
+   background:coral;
+   padding:1em 2em;
+   color:#fff;
+   border:0;
+   width:
+ }
+
+ .button:hover{
+   background:#333;
+ }
+
+ .modal{
+   display:none;
+   position: fixed;
+   z-index:1;
+   left: 0;
+   top:0;
+   height: 100%;
+   width:100%;
+   overflow: auto;
+   background-color: rgba(0,0,0,0.5);
+ }
+
+ .modal-content{
+   background-color:#f4f4f4;
+   margin: 20% auto;
+   width:70%;
+   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+   animation-name:modalopen;
+   animation-duration:1s;
+ }
+
+ .modal-header h2, .modal-footer h3{
+   margin:0;
+ }
+
+ .modal-header{
+   background:coral;
+   padding:15px;
+   color:#fff;
+ }
+
+ .modal-body{
+   padding:10px 20px;
+ }
+
+ .modal-footer{
+   background:coral;
+   padding:10px;
+   color:#fff;
+   text-align: center;
+ }
+
+ .closeBtn{
+   color:#ccc;
+   float: right;
+   font-size:30px;
+   color:#fff;
+ }
+
+ .closeBtn:hover,.closeBtn:focus{
+   color:#000;
+   text-decoration: none;
+   cursor:pointer;
+ }
+
+ @keyframes modalopen{
+   from{ opacity: 0}
+   to {opacity: 1}
+ }
