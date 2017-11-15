@@ -25,11 +25,11 @@
  }
 
 
- @media only screen and (max-width: 500px) {
+ /*@media only screen and (max-width: 500px) {
      body {
          ;
      }
- }
+ }*/
 
  .header{
    display: table;
@@ -52,7 +52,10 @@
    padding-right: 10rem;
  }
 
-
+#navbar, .name {
+  float:left;
+  padding-top: 3rem;
+}
 
  .text-center{
    margin-top: 250px;
