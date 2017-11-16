@@ -8,23 +8,19 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 </head>
 
 <body>
 
   <header id="top" class="header">
-    <a href="#" class="name">Cristina Rosario</a>
     <nav class="navbar">
       <div class="collapse navbar-collapse" id="navbarNav">
 
         <ul class="nav navbar-nav    navbar-right">
           <li class="nav-item active">
-            <a href="index.html">Portfolio</a>
-            <li class="nav-item">
-              <a href="">Article</a>
+            <a href=" <%= "root_path" %>">Portfolio</a>
               <li class="nav-item">
-                <a href="blog.html">Blog</a>
+                <a href=" <%= posts_path %>" >Blog</a>
               </li>
         </ul>
 
@@ -35,24 +31,20 @@
 
   </header>
   <header>
-    <h1 id="article">Articles</h1>
-    <span class="divider"></span>
-    <div class="post_show_content">
-      <div class="article">
+    <div id="post_show_content" class="skinny_wrapper wrapper_padding">
+        <h1><%= @post.title %></h1>
         <p class="date"><%= @post.created_at.strftime("%A, %B, %d") %></p>
-        <h1><% @post.title %></h1>
-
-
-      </div>
+        <span class="divider"></span>
+    </div>
   </header>
 
   <div class="content">
-    <%= @post.content %>
-  </div>
+    <p><%= @post.content %></p>
+
 
 <div id="share-box">
   <p>Share To Do</p>
-  <a href="#"><i class="fa fa-twitter"></i></a>
+
   <a href="#"><i class="fa fa-facebook"></i></a>
   <a href="#"><i class="fa fa-google-plus"></i></a>
 </div>
@@ -70,7 +62,7 @@
     </ul>
   </div>
   </div>
-
+</div>
   <%= link_to 'Edit', edit_post_path(@post) %> |
   <%= link_to 'Back', posts_path %>
   <footer id="main_footer">

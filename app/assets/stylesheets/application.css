@@ -14,6 +14,7 @@
  *= require_self
  */
  @import "normalize";
+ @import "posts";
 
  body h1, h3, p, ul, li{
    font-family: 'Raleway', sans-serif;
@@ -59,13 +60,6 @@
 
  .text-center{
    margin-top: 250px;
- }
-
- {
-   text-align: center;
-   letter-spacing: 4px;
-   color: #3E2723 ;
-   font-family: 'Raleway', sans-serif;
  }
 
  #about-section{
@@ -122,10 +116,7 @@
 
 
 
- .wrapper{
-   width: ;
-   margin: 0 auto;
- }
+
 
  .col-1, .col-2{
    float: left;
@@ -185,12 +176,6 @@
    padding-top: 10px;
  }
 
- .work-pic .workdivider{
-   border-right: :1px solid #F4D03F;
-   height:80px;
-   position:absolute;
-   right:249px;
- }
 
  #main_footer{
    padding: 2em 5%;
@@ -246,14 +231,7 @@
 
  }
 
- input[type="submit"]{
-   background: ;
-   text-align: center;
-   font-size: 1em;
-   text-decoration: none;
-   padding: 1em 2em !important;
 
- }
 
  #share_box{
    text-align: center;
@@ -265,7 +243,6 @@
    padding:1em 2em;
    color:#fff;
    border:0;
-   width:
  }
 
  .button:hover{

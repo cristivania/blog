@@ -14,15 +14,14 @@
 </head>
   <tbody>
     <header id="top" class="header">
-    <a href="#" class="name">Cristina Rosario</a>
     <nav class="navbar">
       <div class="collapse navbar-collapse" id="navbarNav">
 
         <ul class="nav navbar-nav    navbar-right">
           <li class="nav-item active">
-            <a href="index.html">Portfolio</a>
+            <a href="<%= root_path %>" >Portfolio</a>
           <li class="nav-item">
-            <a href="blog.html">Blog</a>
+            <a href=" <%= posts_path %>" >Blog</a>
           </li>
         </ul>
 
@@ -35,9 +34,9 @@
   <h1 id="blog_title">Stuff Ive Written</h1>
   <span class="divider"></span>
   <% @posts.each do |post| %>
-  <h2><a href="#"><%= link_to, post.title, post %></a></h2>
+  <h2><a href= "" > <%= link_to post.title, post_path(post) %></a></h2>
     <p class="date"><%= post.created_at.strftime('%A, %b %d') %>></p>
-    <% end %>
+
     <tr>
       <td><%= link_to 'Show', post %></td>
       <td><%= link_to 'Edit', edit_post_path(post) %></td>
