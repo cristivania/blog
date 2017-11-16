@@ -40,7 +40,9 @@
 
   <div class="content">
     <p><%= markdown @post.content %></p>
+      </div>
 
+      
 <%= render 'disqus'%>
 <div id="share-box">
   <p>Share To Do</p>
@@ -60,7 +62,6 @@
         <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
       </li>
     </ul>
-  </div>
   </div>
 </div>
   <%= link_to 'Edit', edit_post_path(@post) %> |

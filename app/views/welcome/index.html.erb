@@ -52,10 +52,10 @@
   </header>
   <!-- About -->
   <section id="about-section" class="about">
-    <div class="about-wrapper">
-      <div class="aboutme">
-        <h1>Hi, I'm Cristina.</h1>
-        <span class="divider"></span>
+    <header>
+      <h1>Hi Im Cristina</h1>
+      <span class="divider"></span>
+    </header>
         <div class="about-image">
           <img src="cr.jpg" alt="">
           <div class="about-text">
@@ -64,13 +64,13 @@
               existed?!</p>
           </div>
         </div>
-      </div>
-    </div>
   </section>
 
   <section id="skills">
-    <h1>Skills</h1>
-    <span class="divider"></span>
+    <header>
+      <h1>Skills</h1>
+      <span class="divider"></span>
+    </header>
 
     <div class="wrapper clearfix">
       <div class="col-1 picture">
@@ -97,37 +97,49 @@
   </section>
 
   <section id="work">
-    <div class="work-wrapper">
+    <header>
       <h1>Projects</h1>
       <span class="divider"></span>
-      <div class="goodheart">
-        <a href="https://goodheartapp.herokuapp.com/login"><img src="iphone.png" alt="gh" width="500" height="200"></a>
+    </header>
+    <div class="goodheart">
+      <div class="goodheart-pic">
+       <%= image_tag("macdesktop.png", {:style => ""}) %>
+        </div>
+        <div class="modal-button">
+          <!-- Link to open the modal -->
+        <a href="#ex1" rel="modal:open" class="btn btn-info" role="button">More Info</a>
         <div id="ex1" class="modal" >
-  <p>GoodHeart is a web application that matches donors with the blood needs of health providers. Using real time data, the web app notifies donors matching the blood type needed with nearby health providers using SMS messaging (Twilio). The
-    donors are provided with a link to the location with GPS directions (Google Directions API) to the site. This web app performs data tracking to collect donor data and provides donor stats to health providers using live data tracking (HighCharts).
-</p>
-  <a href="#" rel="modal:close">Close</a>
+          <p>GoodHeart is a web application that matches donors with the blood needs of health providers. Using real time data, the web app notifies donors matching the blood type needed with nearby health providers using SMS messaging (Twilio). The
+            donors are provided with a link to the location with GPS directions (Google Directions API) to the site. This web app performs data tracking to collect donor data and provides donor stats to health providers using live data tracking (HighCharts).
+          </p>
+          <a href="#" rel="modal:close">Close</a>
+      </div>
+    </div>
 </div>
 
-<!-- Link to open the modal -->
-<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
 
-        </div>
+  <div class="mooch"
+    <div class="mooch-pic">
+      <%= image_tag("macdesktop.png", {:style => ""}) %>
       </div>
-
-
-    <div class="mooch">
-      <a href="http://moochlife.herokuapp.com/foods"><img src="mooch.jpg" alt="moc" width="500" height="200"></a>
-      <div class="mc">
+      <div class="modal-button">
+        <!-- Link to open the modal -->
+      <a href="#ex1" rel="modal:open" class="btn btn-info" role="button">More Info</a>
+      <div id="ex1" class="modal" >
         <p>Mooch is a platform dedicated to publishing your leftovers so that hungry moochers can finish it for you, ultimately eliminating food waste and world hunger. This application was created in Ruby on Rails, utilizing the gem carrierwave to upload
           photos.</p>
-      </div>
+          <i class="fa fa-html5 fa-3x" aria-hidden="true"></i>
+
+          <br>
+
+        <a href="#" rel="modal:close">Close</a>
     </div>
-    </div>
+  </div>
+  </div>
   </section>
 
   <section id="contact">
-    <h1>Let's Connect</h1>
+    <h1>Say Hello</h1>
     <div class="connect">
       <label>Name</label><br>
       <input type="text" name="" value=""><br>

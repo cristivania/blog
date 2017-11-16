@@ -82,13 +82,14 @@
    background-color: #90A4AE;
  }
 
+ .goodheart{
+   padding-bottom: 100px;
+ }
+
  img {
    width: 30%;
    height: auto;
-   margin-top: 50px;
-   float: left;
    max-width: 450px;
-   padding-right: 20px;
  }
 
  .about-text{
@@ -114,10 +115,6 @@
    padding-bottom: 25px;
    padding-left: 100px;
  }
-
-
-
-
 
  .col-1, .col-2{
    float: left;
@@ -164,7 +161,7 @@
  }
 
  .gh{
-   display: inline-block;
+
    padding-top: 10px;
  }
 
@@ -232,12 +229,6 @@
 
  }
 
-
-
- #share_box{
-   text-align: center;
-
- }
 
  .modal{
    display: inline;
