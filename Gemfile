@@ -4,7 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
+gem 'bootstrap-will_paginate', '~> 0.0.10'
+gem 'will_paginate', '~> 3.1.6'
 gem 'friendly_id', '~> 5.1'
 gem 'pygments.rb', '~> 0.6.3'
 gem 'redcarpet', '~> 3.3'

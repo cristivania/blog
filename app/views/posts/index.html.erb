@@ -37,9 +37,7 @@
 
 
   <% @posts.each do |post| %>
-  <tr>
-
-
+    <tr>
     <td><h2><a href= "" > <%= link_to post.title, post_path(post) %></a></h2>
     <p class="date"><%= post.created_at.strftime('%A, %b %d') %></p></td>
 
@@ -49,21 +47,9 @@
     </tr>
   <% end %>
   </table>
-    <div class="text-center">
-      <ul class="pagination pagination-sm">
-        <li>
-          <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-        </li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li>
-          <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
+  <div class="pagination-wrapper">
+    <%= will_paginate @posts %>
+</div>
 
   <footer id="main_footer">
     <p class="copyright">&copy;2017 Cristina Rosario</p>
