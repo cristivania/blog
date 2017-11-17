@@ -51,6 +51,13 @@
     <%= will_paginate @posts %>
 </div>
 
+<% if notice %>
+		<p class="notice"><%= notice %></p>
+	<% elsif alert %>
+		<p class="alert"><%= alert %></p>
+	<% end %>
+
+
   <footer id="main_footer">
     <p class="copyright">&copy;2017 Cristina Rosario</p>
 

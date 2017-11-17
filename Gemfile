@@ -4,6 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+
+gem 'devise', '~> 4.2'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'will_paginate', '~> 3.1.6'
 gem 'friendly_id', '~> 5.1'
