@@ -17,8 +17,9 @@
  @import "posts";
  @import "pygments";
 
- body h1, h3, p, ul, li{
+ body h1, h3, p, ul, li, form{
    font-family: 'Raleway', sans-serif;
+
 
  }
  h1{
@@ -214,19 +215,6 @@
    margin: 0;
    font-size: 2em;
    text-transform: uppercase;
- }
-
- input{
-   width: 50%;
-   max-width: 100%;
-   margin: .5em 0 2em 0;
-
- }
-
- textarea{
-   width: 50%;
-   max-width: 100%;
-
  }
 
 
