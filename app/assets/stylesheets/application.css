@@ -17,7 +17,7 @@
  @import "posts";
  @import "pygments";
 
- body h1, h3, p, ul, li, form{
+ body h1, h2, h3, p, ul, li {
    font-family: 'Raleway', sans-serif;
 
 

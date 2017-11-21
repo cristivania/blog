@@ -118,7 +118,7 @@
 </div>
 
 
-  <div class="mooch"
+  <div class="mooch">
     <div class="mooch-pic">
       <%= image_tag("macdesktop.png", {:style => ""}) %>
       </div>
@@ -139,16 +139,21 @@
   </section>
 
   <section id="contact">
-    <h2>Say hello</h2>
-  <input type="text" placeholder="Name" value="" required>
-  <input type="text" placeholder="E-mail" value="" required>
-  <textarea placeholder="Message" rows="1" required></textarea>
-
-  <button><i class="fa fa-paper-plane"></i>
-</button>
-
-</form>
-
+    <div class="form-container">
+      <div class="form-head">
+        <h2>Say Hello</h2>
+      </div>
+      <input type="text" name="name" placeholder="Name">
+      <br>
+      <input  type="email" name="email" placeholder="Email">
+      <br>
+      <textarea type="text" name="message" placeholder="Message"></textarea>
+      <br>
+      <div class="message">Message Sent</div>
+      <button id="submit" class="fa fa-paper-plane" type="submit">
+      </button>
+    </div>
+  </form>
   </section>
 
   <footer id="main_footer">
