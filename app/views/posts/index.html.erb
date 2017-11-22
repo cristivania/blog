@@ -40,23 +40,21 @@
     <tr>
     <td><h2><a href= "" > <%= link_to post.title, post_path(post) %></a></h2>
     <p class="date"><%= post.created_at.strftime('%A, %b %d') %></p></td>
-    
+
       <td><%= link_to 'Show', post %></td>
         </tr>
   <% end %>
   </table>
-
+  <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
 
 
   <div class="pagination-wrapper">
     <%= will_paginate @posts %>
 </div>
-
-<% if notice %>
-		<p class="notice"><%= notice %></p>
-	<% elsif alert %>
-		<p class="alert"><%= alert %></p>
-	<% end %>
 
 
   <footer id="main_footer">
