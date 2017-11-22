@@ -18,7 +18,7 @@
 
         <ul class="nav navbar-nav    navbar-right">
           <li class="nav-item active">
-            <a href=" <%= "root_path" %>">Portfolio</a>
+            <a href=" <%= "" %>">Portfolio</a>
               <li class="nav-item">
                 <a href=" <%= posts_path %>" >Blog</a>
               </li>
@@ -41,7 +41,9 @@
   <div class="content">
     <p><%= markdown @post.content %></p>
   </div>
-
+  <div class="back-button">
+      <%= link_to 'Back', posts_path %>
+  </div>
 
 
 <%= render 'disqus'%>
@@ -53,7 +55,7 @@
 </div>
 
 
-  <%= link_to 'Back', posts_path %>
+
 
 
   <footer id="main_footer">

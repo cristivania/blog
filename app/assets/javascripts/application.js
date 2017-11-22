@@ -16,6 +16,8 @@
 //= require turbolinks
 //= require_tree .
 
+
+
 //Smooth Scrolling
 $(document).ready(function() {
 
