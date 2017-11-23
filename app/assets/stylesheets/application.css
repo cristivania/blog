@@ -100,6 +100,14 @@
    max-width: 450px;
  }
 
+ .table td{
+   text-align: center;
+}
+.borderless tr td {
+    border: none !important;
+    padding: 0px !important;
+}
+
  .about-text{
    display: inline-block;
    width: 60%;
@@ -204,8 +212,9 @@
    padding: 2em 0 0;
    font-size: 30px;
    text-transform: capitalize;
-
+   margin-top: 0;
  }
+
   .post_wrapper{
     width: 80%;
     margin: 0 auto;
