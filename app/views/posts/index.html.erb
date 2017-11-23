@@ -11,18 +11,13 @@
           <p><%= post.created_at.strftime('%A, %b %d') %></p>
         </div>
 
+
         <%= link_to 'Edit', edit_post_path(post) %></td>
         <%= link_to 'Destroy', {:controller=>:posts,:action=>:destroy, :id=>post}, :method=>:delete %>
 
     </div>
   </div>
 </div>
-  <% end %>
-
-  <% if notice %>
-      <p class="notice"><%= notice %></p>
-    <% elsif alert %>
-      <p class="alert"><%= alert %></p>
   <% end %>
 
 <div class="pagination-wrapper">
