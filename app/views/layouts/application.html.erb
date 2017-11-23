@@ -29,6 +29,8 @@
             <li class="nav-item">
             <a href=" <%= posts_path %>" >Blog</a>
           </li>
+          <li class="nav-item">
+           <%= link_to "Sign Up", new_user_registration_path %>
           </ul>
         </div>
       </div>
@@ -37,6 +39,6 @@
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
     <%= yield %>
-  
+    
   </body>
 </html>
