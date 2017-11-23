@@ -1,26 +1,26 @@
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+  <h1><%= @post.title %></h1>
+  <p class="date"><%= @post.created_at.strftime("%A, %B, %d") %></p>
+  <span class="divider"></span>
+</div>
 
-    <div id="post_show_content" class="skinny_wrapper wrapper_padding">
-        <h1><%= @post.title %></h1>
-        <p class="date"><%= @post.created_at.strftime("%A, %B, %d") %></p>
-        <span class="divider"></span>
-    </div>
-
-
-  <div class="content">
-    <p><%= markdown @post.content %></p>
-  </div>
-  <div class="back-button">
-      <%= link_to 'Back', posts_path %>
-  </div>
-
+<div class="content">
+  <p><%= markdown @post.content %></p>
+</div>
+<div class="back-button">
+  <%= link_to 'Back', posts_path %>
+</div>
 
 <%= render 'disqus'%>
 <div id="share-box">
   <p>Share To Do</p>
 
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <a href="#"><i class="fa fa-google-plus"></i></a>
+  <a href="#">
+    <i class="fa fa-facebook"></i>
+  </a>
+  <a href="#">
+    <i class="fa fa-google-plus"></i>
+  </a>
 </div>
 
-
-<script id="dsq-count-scr" src="//cristinarosarioblog.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="//cristinarosarioblog.disqus.com/count.js" async="async"></script>

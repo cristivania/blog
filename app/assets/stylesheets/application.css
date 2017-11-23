@@ -17,12 +17,18 @@
  @import "posts";
  @import "pygments";
 
+ body {
+    margin:0px;
+}
+
+body {
+   margin:0px;
+}
+
  body h1, h2, h3, p, ul, li {
    font-family: 'Raleway', sans-serif;
+}
 
-
-
- }
  h1{
    font-size: 2.5rem;
    letter-spacing: 2px;
@@ -37,7 +43,6 @@
 
  .header{
    display: table;
-   text-align: center;
    position: relative;
    width: 100%;
    height: 100px;
@@ -49,11 +54,6 @@
    position: relative;
    background-attachment: fixed;
  }
-
-.navbar{
-  position: fixed;
-  overflow: hidden;
-}
 
 
  #top .nav{
@@ -100,7 +100,7 @@
    max-width: 450px;
  }
 
- .table td{
+.table td{
    text-align: center;
 }
 .borderless tr td {
@@ -190,14 +190,78 @@
    padding-top: 10px;
  }
 
+.stuff-written{
+  text-align: center;
+}
+
+.post-container{
+  text-align: center;
+  width:900px;
+  height:100px;
+  margin:auto;
+  margin-bottom: 30px;
+}
+
+ .post-post{
+     position: relative;
+     padding: 1em;
+     padding-top: 1em;
+     padding-right: 1em;
+     padding-bottom: 1em;
+     padding-left: 1em;
+     margin-bottom: 1em;
+     background-color: #fff;
+     border: 1px solid #ccc;
+ }
+
+ .date p{
+     position: absolute;
+     top: 1em;
+     right: -10px;
+     padding: .5em;
+     padding-top: 0.5em;
+     padding-right: 0.5em;
+     padding-bottom: 0.5em;
+     padding-left: 0.5em;
+     background-color: #6cf;
+     font-weight: bold;
+     font-size: 1.25em;
+     color: #fff;
+}
+
+.date p::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    border-top-color: #00008B;
+    border-left-color: #00008B;
+}
+
+
+
+
+
+
+
+
+
+
+
 
  #main_footer{
    padding: 2em 5%;
    border-top: 1px;
    background:#6cf;
-
-
- }
+   bottom: 0;
+   width: 100%;
+   overflow: hidden;
+}
 
  .copyright{
    display: block;
@@ -206,14 +270,13 @@
 
  }
 
- #blog_title, #article{
-   font-weight: 400;
-   text-align: center;
-   padding: 2em 0 0;
-   font-size: 30px;
-   text-transform: capitalize;
-   margin-top: 0;
- }
+ .blog_title{
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-top: 0;
+  }
 
   .post_wrapper{
     width: 80%;

@@ -1,29 +1,31 @@
-<p id="notice"><%= notice %></p>
-
-  <h1 id="blog_title">Stuff Ive Written</h1>
+<div class="stuff-written">
+  <h1>Stuff Ive Written</h1>
+  </div>
   <span class="divider"></span>
-  <table class="table borderless">
+    <% @posts.each do |post| %>
+  <div class="post-container">
+    <div class="post-post">
+      <div class="post-heather">
+        <h1><a href= "" > <%= link_to post.title, post_path(post) %></a></h1>
+        <div class="date">
+          <p><%= post.created_at.strftime('%A, %b %d') %></p>
+        </div>
 
+        <%= link_to 'Edit', edit_post_path(post) %></td>
+        <%= link_to 'Destroy', {:controller=>:posts,:action=>:destroy, :id=>post}, :method=>:delete %>
 
-  <% @posts.each do |post| %>
-    <tr>
-    <td><h2><a href= "" > <%= link_to post.title, post_path(post) %></a></h2>
-    <p class="date"><%= post.created_at.strftime('%A, %b %d') %></p></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-   <td><%= link_to 'Destroy', {:controller=>:posts,:action=>:destroy, :id=>post}, :method=>:delete %></td>
-
-  </tr>
-
+    </div>
+  </div>
+</div>
   <% end %>
-  </table>
+
   <% if notice %>
       <p class="notice"><%= notice %></p>
     <% elsif alert %>
       <p class="alert"><%= alert %></p>
-    <% end %>
+  <% end %>
 
-
-  <div class="pagination-wrapper">
+<div class="pagination-wrapper">
     <%= will_paginate @posts %>
 </div>
 
