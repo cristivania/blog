@@ -249,8 +249,9 @@ body {
   text-align: center;
   width:100%;
 	margin:auto;
+  margin-top: -40px;
 	max-width:525px;
-	min-height:450px;
+	min-height:420px;
 	position:relative;
   background:#0074D9;
   box-shadow: 10px 10px 5px #888888
@@ -263,6 +264,7 @@ body {
   text-align:center;
   color:#ccc;
   margin-bottom:24px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .sign-form .btn{
