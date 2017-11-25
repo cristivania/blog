@@ -245,6 +245,44 @@ body {
 
 
 
+.form-rails{
+  text-align: center;
+  width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:450px;
+	position:relative;
+  background:#0074D9;
+  box-shadow: 10px 10px 5px #888888
+}
+
+.sign-form{
+  width:100%;
+	height:100%;
+	position:absolute;
+  text-align:center;
+  color:#ccc;
+  margin-bottom:24px;
+}
+
+.sign-form .btn{
+  position:relative;
+  border:0;
+  background:#6cf;
+  font-size:1em;
+  color:#fff;
+  border-radius: 50px
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
