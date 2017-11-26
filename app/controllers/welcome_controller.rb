@@ -3,5 +3,3 @@ class WelcomeController < ApplicationController
       render params[:page]
     end
   end
-
-end
