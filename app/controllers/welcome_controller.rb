@@ -1,5 +1,7 @@
 class WelcomeController < ApplicationController
   def index
-      render params[:page]
+    respond_to do |format|
+      format.html { render :layout => false } # your-action.html.erb
+      end
     end
   end

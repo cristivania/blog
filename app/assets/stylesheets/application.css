@@ -41,6 +41,15 @@ body {
      }
  }*/
 
+ .navbar .name{
+   text-decoration: none;
+   float: left;
+   padding-top: 4rem;
+   padding-left: 10rem;
+
+
+ }
+
  .header{
    display: table;
    position: relative;
@@ -62,10 +71,6 @@ body {
    padding-right: 10rem;
  }
 
-#navbar, .name {
-  float:left;
-  padding-top: 3rem;
-}
 
  .text-center{
    margin-top: 250px;
