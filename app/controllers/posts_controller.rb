@@ -17,7 +17,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = current_user.post.build
+    @post = current_user.posts.build
   end
 
   # GET /posts/1/edit
