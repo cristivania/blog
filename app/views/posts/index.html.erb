@@ -18,11 +18,12 @@
 
     </div>
   </div>
+  <% if post.user == current_user %>
+  <%= link_to 'New Post', new_post_path %>
+  <% end %>
 </div>
   <% end %>
 
 <div class="pagination-wrapper">
     <%= will_paginate @posts %>
 </div>
-
-<%= link_to 'New Post', new_post_path %>
