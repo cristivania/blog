@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails_12factor'
+gem 'rails_12factor' , group: :production
 gem 'mail_form', '~> 1.5'
 gem 'devise', '~> 4.2'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
