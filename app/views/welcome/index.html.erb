@@ -46,7 +46,7 @@
       <span class="divider"></span>
     </header>
         <div class="about-image">
-          <%= image_tag("profilepic.jpg", class:"profilepic") %>
+          <%= image_tag("cris.jpg", class:"profilepic") %>
           <div class="about-text">
             <p>Of all the books in the world, the best pages are found within a passport. I love all things travel, coffee, and tech...and not necessarily in that order. My love for tech was born in Puerto Rico while working in the non-profit sector. The
               organization I was working with had a team of software engineers and I was always fascinated by the way they transformed ordinary ideas into something functional and practical...and what's better than creating the things you wish already
@@ -91,40 +91,20 @@
       <span class="divider"></span>
     </header>
     <div class="goodheart">
-      <div class="goodheart-pic">
-       <%= image_tag("", {:style => ""}) %>
-        </div>
-        <div class="modal-button">
-          <!-- Link to open the modal -->
-        <a href="#ex1" rel="modal:open" class="btn btn-info" role="button">More Info</a>
-        <div id="ex1" class="modal" >
-          <p>GoodHeart is a web application that matches donors with the blood needs of health providers. Using real time data, the web app notifies donors matching the blood type needed with nearby health providers using SMS messaging (Twilio). The
-            donors are provided with a link to the location with GPS directions (Google Directions API) to the site. This web app performs data tracking to collect donor data and provides donor stats to health providers using live data tracking (HighCharts).
-          </p>
-          <a href="#" rel="modal:close">Close</a>
-      </div>
+       <%= image_tag("gh.jpg", class:"ghpic") %>
+     <a class="btn" data-popup-open="popup-1" href="#">More Info. Click!</a>
+
+<div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+        <h2>GoodHeart</h2>
+        <p>GoodHeart is a web application that matches donors with the blood needs of health providers. Using real time data, the web app notifies donors matching the blood type needed with nearby health providers using SMS messaging (Twilio). The
+          donors are provided with a link to the location with GPS directions (Google Directions API) to the site. This web app performs data tracking to collect donor data and provides donor stats to health providers using live data tracking (HighCharts).
+          <br>
+        </p><a data-popup-close="popup-1" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
     </div>
 </div>
-
-
-  <div class="mooch">
-    <div class="mooch-pic">
-      <%= image_tag("", {:style => ""}) %>
-      </div>
-      <div class="modal-button">
-        <!-- Link to open the modal -->
-      <a href="#ex1" rel="modal:open" class="btn btn-info" role="button">More Info</a>
-      <div id="ex1" class="modal" >
-        <p>Mooch is a platform dedicated to publishing your leftovers so that hungry moochers can finish it for you, ultimately eliminating food waste and world hunger. This application was created in Ruby on Rails, utilizing the gem carrierwave to upload
-          photos.</p>
-          <i class="fa fa-html5 fa-3x" aria-hidden="true"></i>
-
-          <br>
-
-        <a href="#" rel="modal:close">Close</a>
-    </div>
-  </div>
-  </div>
+ </div>
   </section>
 
   <section id="contact">
