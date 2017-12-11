@@ -30,7 +30,7 @@
             <a class="nav-link scroll" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a href= " <%= posts_path %>">Blog</a>
+            <%= link_to "Blog", posts_path, :"data-no-turbolink" => true, method: "get" %>
           </li>
         </ul>
           </div>

@@ -75,7 +75,7 @@ $(function() {
 
 
 
-document.addEventListener("turbolinks:load", function() {
+$(document).on('turbolinks:load', function() {
 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
