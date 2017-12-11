@@ -113,7 +113,7 @@ window.onload = function() {
 
 
 
-$(function() {
+$(document).on('turbolinks:load', function() {
     //----- OPEN
     $('[data-popup-open]').on('click', function(e)  {
         var targeted_popup_class = jQuery(this).attr('data-popup-open');
