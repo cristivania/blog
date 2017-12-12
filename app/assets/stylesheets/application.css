@@ -150,6 +150,11 @@ body {
    max-width: 450px;
  }
 
+
+.back-button{
+  text-align: center;
+}
+
 .table td{
    text-align: center;
 }

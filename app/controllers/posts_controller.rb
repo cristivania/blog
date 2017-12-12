@@ -29,7 +29,7 @@ class PostsController < ApplicationController
   def create
      @post = Post.new(post_params)
      if @post.save
-       redirect_to @post, notice: "Hellz yeah, Cristina! Your article was successfully saved!"
+       redirect_to @post, notice: "HOLA, Cristina! Your article was successfully saved!"
      else
        render 'new'
      end
