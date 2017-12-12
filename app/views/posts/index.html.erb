@@ -24,4 +24,6 @@
 <div class="pagination-wrapper">
     <%= will_paginate @posts %>
 </div>
+  <% if user_signed_in? %>
 <%= link_to 'New Post', new_post_path %>
+<% end %>
