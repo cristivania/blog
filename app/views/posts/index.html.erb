@@ -11,10 +11,10 @@
           <p><%= post.created_at.strftime('%A, %b %d') %></p>
         </div>
 
-        <% if post.user == current_user %>
-        <%= link_to 'Edit', edit_post_path(post) %>
-        <%= link_to 'Destroy', {:controller=>:posts,:action=>:destroy, :id=>post}, :method=>:delete %>
-        <% end %>
+        <% if user_signed_in? %>
+			<%= link_to "Edit", edit_post_path(post) %>
+			<%= link_to "Destroy", {:controller=>:posts,:action=>:destroy, :id=>post}, :method=>:delete %>
+	<% end %>
 
     </div>
   </div>
