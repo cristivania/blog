@@ -164,12 +164,15 @@ body {
 }
 
  .about-text{
-   display: inline-block;
    width: 60%;
    vertical-align: top;
    font-size: .5em;
-   margin-top: 100px;
+   margin-top: -220px;
+   float: right;
+   font-size: 18px;
  }
+
+
 
  .box-content {
    display: inline-block;
