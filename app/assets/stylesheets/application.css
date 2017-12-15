@@ -199,6 +199,9 @@ body {
    width: 60%;
    text-align: center;
    padding-right: 2.5%;
+   padding-top: 90px;
+   text-align: justify;
+   font-size: 18px;
 
  }
 
