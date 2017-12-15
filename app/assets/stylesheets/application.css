@@ -238,6 +238,13 @@ body {
    margin-left: 100px;
  }
 
+
+ .getweatherpic{
+   width: 460px;
+   margin-left: 100px;
+   padding-bottom: 40px;
+ }
+
  .mooch{
    display: inline-block;
  }

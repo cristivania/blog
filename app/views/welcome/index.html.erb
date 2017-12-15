@@ -91,18 +91,39 @@
       <h1>Projects</h1>
       <span class="divider"></span>
     </header>
-    <div class="goodheart">
-       <%= image_tag("gh.jpg", class:"ghpic") %>
+
+
+
+    <div class="getweather">
+       <%= image_tag("getweather.jpg", class:"getweatherpic") %>
      <a class="btn" data-popup-open="popup-1" href="#">More Info. Click!</a>
 
-<div class="popup" data-popup="popup-1">
+    <div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+        <h2>Get Weather</h2>
+        <p>hola<br>
+        </p><a data-popup-close="popup-1" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="goodheart">
+       <%= image_tag("gh.jpg", class:"ghpic") %>
+     <a class="btn" data-popup-open="popup-2" href="#">More Info. Click!</a>
+
+<div class="popup" data-popup="popup-2">
     <div class="popup-inner">
         <h2>GoodHeart</h2>
         <p>GoodHeart is a web application that matches donors with the blood needs of health providers. Using real time data, the web app notifies donors matching the blood type needed with nearby health providers using SMS messaging (Twilio). The
           donors are provided with a link to the location with GPS directions (Google Directions API) to the site. This web app performs data tracking to collect donor data and provides donor stats to health providers using live data tracking (HighCharts).
           <br>
-        </p><a data-popup-close="popup-1" href="#">Close</a></p>
-        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+        </p><a data-popup-close="popup-2" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
     </div>
 </div>
  </div>
