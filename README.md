@@ -24,4 +24,6 @@ Sendgrid is an add-on on Heroku for providing scalable email delivery and analyt
 
 Redcarpet Gem: A fast, safe and extensible Markdown to (X)HTML parser.
 
+will_paginate Gem: is a pagination library.
+
 
