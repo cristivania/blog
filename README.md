@@ -1,6 +1,6 @@
 # README
 
-My Blog/Portfolio was build:
+My Blog/Portfolio was built using:
 
 HTML and CSS
 
@@ -14,7 +14,7 @@ Heroku
 
 GEMS:
 
-devise Gem - keep users' passwords secure.
+devise Gem - keeps users' passwords secure.
 
 friendlyId Gem - It lets you create pretty URLs and work with human-friendly strings as if they were numeric ids.
 
