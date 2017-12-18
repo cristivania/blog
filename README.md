@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My Blog/Portfolio was built using:
 
-Things you may want to cover:
+HTML and CSS
 
-* Ruby version
+Bootstrap
 
-* System dependencies
+Ruby on Rails
 
-* Configuration
+PostgreSQL Database
 
-* Database creation
+Heroku
 
-* Database initialization
+GEMS:
 
-* How to run the test suite
+devise Gem - keeps users' passwords secure.
 
-* Services (job queues, cache servers, search engines, etc.)
+friendlyId Gem - It lets you create pretty URLs and work with human-friendly strings as if they were numeric ids.
 
-* Deployment instructions
+For my contact form:
+mail_Form Gem - allows you to send an e-mail straight from a form. 
+Sendgrid is an add-on on Heroku for providing scalable email delivery and analytics for apps.
 
-* ...
+Redcarpet Gem: A fast, safe and extensible Markdown to (X)HTML parser.
+
+will_paginate Gem: is a pagination library.
+
+
