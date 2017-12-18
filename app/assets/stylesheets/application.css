@@ -116,12 +116,6 @@ body {
   height: 280px;
 }
 
-
-.about-text{
-  margin-left: 100px;
-}
-
-
  #about-section{
    padding-right: 100px;
    padding-bottom: 100px;
@@ -167,7 +161,7 @@ body {
    width: 60%;
    vertical-align: top;
    font-size: .5em;
-   margin-top: -220px;
+   margin-top: 65px;
    float: right;
    font-size: 18px;
  }
